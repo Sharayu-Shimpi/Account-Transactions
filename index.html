@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bank App</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking the CSS file -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>Simple Bank App</h1>
+        <p>Balance: <span id="balance">0</span></p>
+
+        <div class="input-group">
+            <label for="depositAmount">Deposit Amount: </label>
+            <input type="number" id="depositAmount" value="0">
+            <button class="deposit" onclick="handleDeposit()">Deposit</button>
+        </div>
+
+        <div class="input-group">
+            <label for="withdrawAmount">Withdraw Amount: </label>
+            <input type="number" id="withdrawAmount" value="0">
+            <button class="withdraw" onclick="handleWithdraw()">Withdraw</button>
+        </div>
+
+        <div id="message" class="alert"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
